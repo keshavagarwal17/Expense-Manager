@@ -9,7 +9,7 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
     const history = useHistory();
     const fetchUser = async () => {
-        let res = await axios.get('http://localhost:5000/auth/getUser');
+        let res = await axios.get('https://expense-manager01.herokuapp.com/auth/getUser');
         if(res.data.admin){
             history.push("/admin/dashboard")
         }

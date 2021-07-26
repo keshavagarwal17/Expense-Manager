@@ -12,7 +12,7 @@ const Dashboard = () => {
     const [users,setUser] = useState([]);
     const history = useHistory();
     const fetchData = async () => {
-        let res = await axios.get('http://localhost:5000/auth/getUser');
+        let res = await axios.get('https://expense-manager01.herokuapp.com/auth/getUser');
         if (!(res.data.user)) {
             history.push("/admin/login")
         }
@@ -21,7 +21,7 @@ const Dashboard = () => {
         }
         setLoading(false);
         setFetch(true);
-        res = await axios.get('http://localhost:5000/admin/dashboard')
+        res = await axios.get('https://expense-manager01.herokuapp.com/admin/dashboard')
         setUser(res.data.users);
         setFetch(false);
     }

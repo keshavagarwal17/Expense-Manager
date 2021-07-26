@@ -13,7 +13,7 @@ const Login = ()=>{
     const [saving,setSaving] = useState(false);
     const history = useHistory();
     const fetchUser = async()=>{
-        let res = await axios.get('http://localhost:5000/auth/getUser');
+        let res = await axios.get('https://expense-manager01.herokuapp.com/auth/getUser');
         if(res.data.admin){
             history.push("/admin/dashboard")
         }
@@ -34,7 +34,7 @@ const Login = ()=>{
     const handleSubmit = async(e) => {
         e.preventDefault();
         setSaving(true);
-        let res = await axios.post('http://localhost:5000/auth/login',userInfo);
+        let res = await axios.post('https://expense-manager01.herokuapp.com/auth/login',userInfo);
         setSaving(false);
         if(res.data.err){
             setError(res.data.err)

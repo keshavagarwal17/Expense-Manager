@@ -16,13 +16,13 @@ const Dashboard = () => {
 
     const fetchData = async(category)=>{
         setFetch(true);
-        let res = await axios.get(`http://localhost:5000/expense/show-expense/${category}`);
+        let res = await axios.get(`https://expense-manager01.herokuapp.com/expense/show-expense/${category}`);
         setData(res.data.expenses)
         setFetch(false);
     }
 
     const fetchUser = async () => {
-        let res = await axios.get('http://localhost:5000/auth/getUser');
+        let res = await axios.get('https://expense-manager01.herokuapp.com/auth/getUser');
         if (!(res.data.user)) {
             history.push("/auth/login")
         }
@@ -49,7 +49,7 @@ const Dashboard = () => {
     }
     const deleteExpense = async(id)=>{
         setData(data.filter((exp)=>exp.id!==id))
-        await axios.delete(`http://localhost:5000/expense/delete/${id}`)
+        await axios.delete(`https://expense-manager01.herokuapp.com/expense/delete/${id}`)
     }
     return (
         <div>

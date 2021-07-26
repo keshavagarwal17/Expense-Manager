@@ -16,7 +16,7 @@ const Expense = (data) => {
     const [id,setId] = useState("");
     const [name,setName] = useState("");
     const fetchData = async () => {
-        let res = await axios.get('http://localhost:5000/auth/getUser');
+        let res = await axios.get('https://expense-manager01.herokuapp.com/auth/getUser');
         if (!(res.data.user)) {
             return history.push("/admin/login")
         }
@@ -31,14 +31,14 @@ const Expense = (data) => {
         setLoading(false);
         setFetch(true);
         let curId = data.location.data.id;
-        res = await axios.get(`http://localhost:5000/admin/list/${curId}`);
+        res = await axios.get(`https://expense-manager01.herokuapp.com/admin/list/${curId}`);
         setExpense(res.data.expenses)
         setFetch(false);
     }
 
     const deleteExpense = async (id1) => {
         setExpense(expenses.filter((exp) => exp.id !== id1))
-        await axios.delete(`http://localhost:5000/admin/delete/${id}/${id1}`)
+        await axios.delete(`https://expense-manager01.herokuapp.com/admin/delete/${id}/${id1}`)
     }
 
     useEffect(() => {

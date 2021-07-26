@@ -13,7 +13,7 @@ const AddExpense = () => {
     const [processing,setProcessing] = useState(false);
     const history = useHistory();
     const fetchUser = async () => {
-        let res = await axios.get('http://localhost:5000/auth/getUser');
+        let res = await axios.get('https://expense-manager01.herokuapp.com/auth/getUser');
         if (!(res.data.user)) {
             history.push("/auth/login")
         }
@@ -49,7 +49,7 @@ const AddExpense = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         setProcessing(true);
-        let res = await axios.post("http://localhost:5000/expense/add",expenseInfo);
+        let res = await axios.post("https://expense-manager01.herokuapp.com/expense/add",expenseInfo);
         if(res.data.success){
             history.push('/expenses')
         }else{

@@ -13,7 +13,7 @@ const EditExpense = (data) => {
     const [processing,setProcessing] = useState(false);
     const history = useHistory();
     const fetchUser = async () => {
-        let res = await axios.get('http://localhost:5000/auth/getUser');
+        let res = await axios.get('https://expense-manager01.herokuapp.com/auth/getUser');
         if (!(res.data.user)) {
             history.push("/admin/login")
         }
@@ -54,7 +54,7 @@ const EditExpense = (data) => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         setProcessing(true);
-        let res = await axios.put("http://localhost:5000/admin/expense/edit",expenseInfo);
+        let res = await axios.put("https://expense-manager01.herokuapp.com/admin/expense/edit",expenseInfo);
         if(res.data.success){
             history.push('dashboard')
         }else{

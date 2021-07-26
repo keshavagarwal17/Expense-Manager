@@ -1,0 +1,22 @@
+{
+  "name": "expense-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-prebuild": "cd expense-manager-backend && npm install",
+    "start": "cd expense-manager && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Keshav-Agarwal/Expense-Manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Keshav-Agarwal/Expense-Manager/issues"
+  },
+  "homepage": "https://github.com/The-Keshav-Agarwal/Expense-Manager#readme"
+}

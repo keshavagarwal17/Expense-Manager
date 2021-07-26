@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-prebuild": "cd expense-manager-backend && npm install",
-    "start": "cd expense-manager && npm start"
+    "start": "cd expense-manager-backend && npm start"
   },
   "repository": {
     "type": "git",

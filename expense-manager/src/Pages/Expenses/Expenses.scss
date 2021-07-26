@@ -1,0 +1,23 @@
+.expense-page{
+    width:90%;
+    margin: auto;
+    border: 1px solid #4140400e;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px 1.5px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.expense-page .cat-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expense-page .cat-btn a{
+    cursor: pointer;
+    padding: 8px 4px;
+    font-size: 17px;
+    box-shadow: 1.5px 1.5px 1.5px rgba(0,0,0,0.1);
+    background-color: #4C45A4;
+    border: 1px solid #4140400e;
+    text-decoration: none;
+    color: white;
+}

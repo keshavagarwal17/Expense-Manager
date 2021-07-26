@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.expense-card{
+    box-sizing: border-box;
+    padding: 20px 40px 20px 20px;
+    border: 1px solid #4140400e;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px 1.5px rgba(0,0,0,0.1);
+    border-left: 2px solid #4C45A4;
+    margin: 10px 0;
+    font-size: 17px;
+    line-height: 25px;
+    color: #323232ce;
+    font-size: 18px;
+}
+.expense-card .amt-cat{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.expense-card .date-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.expense-card .date-icon .icon-block-div > *{
+    cursor: pointer;
+    padding: 0 10px;
+}

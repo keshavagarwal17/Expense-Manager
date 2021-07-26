@@ -1,0 +1,28 @@
+.add-expense{
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 40px;
+    border: 1px solid #4140400e;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px 1.5px rgba(0,0,0,0.1);
+}
+.add-expense h2{
+    color: #4C45A4;
+    margin-bottom: 30px;
+}
+.add-expense .add-expense-btn{
+    background-color: #4C45A4;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 550px) {
+    .add-expense{
+        width: 90%;
+    }
+}

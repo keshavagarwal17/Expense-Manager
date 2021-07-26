@@ -1,0 +1,66 @@
+.input-box{
+    position: relative;
+}
+.input-box input {
+    width: 100%;
+    padding: 10px 0 2px 0;
+    font-size: 16px;
+    margin-bottom: 35px;
+    border: none;
+    border-bottom: 1px solid #323232;
+    outline: none;
+    background: transparent;
+}
+.input-box label {
+    color: #323232;
+    font-weight: bold;
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0 2px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+  top: -25px;
+  left: 0;
+  color: #323232;
+  font-size: 15px;
+}
+.login-form{
+    border: 1px solid #4140400e;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px 1.5px rgba(0,0,0,0.1);
+    width: 50%;
+    margin: 50px auto;
+    padding: 50px;
+}
+.login-form h3{
+    color: #4C45A4;
+    margin-bottom: 35px;
+}
+.login-form .login-btn{
+    background-color: #4C45A4;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    font-size: 18px;
+}
+.login-form .bottom-line{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #323232;
+}
+.login-form .bottom-line a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    .login-form{
+        width: 80%;
+    }
+}

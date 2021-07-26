@@ -6,7 +6,7 @@ import axios from 'axios';
 const Navbar = () => {
     const history = useHistory();
     const logoutUser = async()=>{
-        await axios.get("http://localhost:5000/auth/logout")
+        await axios.get("https://expense-manager01.herokuapp.com/auth/logout")
         history.push("/")
     }
     return (

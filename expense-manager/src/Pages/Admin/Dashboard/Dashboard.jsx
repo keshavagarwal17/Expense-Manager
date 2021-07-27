@@ -50,7 +50,7 @@ const Dashboard = () => {
                         {fetchingData && <LoadingData />}
                         {!fetchingData && <div>
                             <h3>List of All Active Users</h3>
-                            <p>click on user card to see expense of that particular user.</p>
+                            <p>click on user card to see all expenses of that particular user.</p>
                             {users.map((user,index)=>renderUser(user,index))}
                         </div>}
                     </div>

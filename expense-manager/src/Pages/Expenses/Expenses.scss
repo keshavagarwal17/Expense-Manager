@@ -21,3 +21,8 @@
     text-decoration: none;
     color: white;
 }
+@media screen and (max-width: 500px) {
+    .expense-page{
+        width: 100%;
+    }
+}

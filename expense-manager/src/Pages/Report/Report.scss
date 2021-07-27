@@ -22,3 +22,10 @@
 .report .category-wise-report{
     margin-top: 25px;
 }
+
+
+@media screen and (max-width: 500px) {
+    .report{
+        width: 100%;
+    }
+}

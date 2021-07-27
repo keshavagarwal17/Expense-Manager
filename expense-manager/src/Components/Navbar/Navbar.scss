@@ -32,3 +32,16 @@
     font-weight: bold;
     font-size: 18px;
 }
+
+@media screen and (max-width: 500px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom:1px solid #32323377;
+        margin-bottom: 10px;
+    }
+    .navbar ul li{
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}

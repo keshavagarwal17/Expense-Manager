@@ -30,3 +30,11 @@
     cursor: pointer;
     padding: 0 10px;
 }
+
+@media screen and (max-width: 500px) {
+    .expense-card .amt-cat{
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 2.5rem;
+    }
+}

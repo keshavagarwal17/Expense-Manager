@@ -3,6 +3,7 @@ const router = express.Router();
 var firebase = require("firebase/app");
 const app = require('../firebase')
 const db = firebase.firestore(app);
+const fetch = require('node-fetch');
 
 const monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 

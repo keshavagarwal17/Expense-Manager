@@ -116,4 +116,4 @@ expense added by particular user(admin can edit or delete expense)
 ---
 
 # External Api
-use two external api. one to access all available currency name(to show on add and edit expense page) and another to convert any currency into Indian currency(while showing total expense on dashboard or on report page.)
+In this website I used two external api. one to access all available currency name(to show on add and edit expense page) and another to convert any currency into Indian currency(while showing total expense on dashboard or on report page.)
